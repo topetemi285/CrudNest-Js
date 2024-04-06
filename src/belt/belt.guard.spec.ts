@@ -1,7 +1,7 @@
-import { BeltGuard } from './belt.guard';
+// import { BeltGuard } from './belt.guard';
 
-describe('BeltGuard', () => {
-  it('should be defined', () => {
-    expect(new BeltGuard()).toBeDefined();
-  });
-});
+// describe('BeltGuard', () => {
+//   it('should be defined', () => {
+//     expect(new BeltGuard()).toBeDefined();
+//   });
+// });

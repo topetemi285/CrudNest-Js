@@ -9,14 +9,14 @@ import {
   Post,
   Put,
   Query,
-  UseGuards,
+  // UseGuards,
   ValidationPipe,
 } from '@nestjs/common';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CreateFirstDto } from './dto/create-first.dto';
 import { FirstService } from './first.service';
 import { UpdateUserDto } from './dto/update-first.dto';
-import { BeltGuard } from 'src/belt/belt.guard';
+//import { BeltGuard } from 'src/belt/belt.guard';
 
 @Controller('first')
 export class FirstController {
@@ -39,7 +39,7 @@ export class FirstController {
   }
 
   @Post()
-  @UseGuards(BeltGuard)
+  // @UseGuards(BeltGuard)
   createFirst(@Body(new ValidationPipe()) createFirstDto: CreateFirstDto) {
     return this.firstService.creatFirst(createFirstDto);
   }
